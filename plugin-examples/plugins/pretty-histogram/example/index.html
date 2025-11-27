@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en"><head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lightweight Charts - Pretty Histogram Series Plugin Example</title>
+		<style>
+			.barEditor {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin: 10px;
+				justify-content: space-between;
+				white-space: nowrap;
+			}
+			.barEditor input {
+				padding-left: 10px;
+				margin-left: 15px;
+			}
+		</style>
+		<script type="module" crossorigin="" src="../../../assets/19-Bdajav2x.js"></script>
+		<link rel="modulepreload" crossorigin="" href="../../../assets/lightweight-charts.production-DiDv8rJD.js">
+		<link rel="modulepreload" crossorigin="" href="../../../assets/sample-data-x_8-FZm1.js">
+		<link rel="modulepreload" crossorigin="" href="../../../assets/positions-t2UKkghX.js">
+		<link rel="stylesheet" crossorigin="" href="../../../assets/lightweight-charts-CqcgeZSf.css">
+	<style id="ai-toggle-style">
+                .original-text { transition: opacity 0.3s; }
+                body[data-view-mode="translation-only"] .original-text { display: none !important; }
+                
+                #ai-toggle-btn {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 9999;
+                    background: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 50px;
+                    padding: 10px 20px;
+                    font-family: sans-serif;
+                    font-size: 14px;
+                    cursor: pointer;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    transition: transform 0.2s, background 0.2s;
+                }
+                #ai-toggle-btn:hover { transform: scale(1.05); background: #0056b3; }
+                #ai-toggle-btn:active { transform: scale(0.95); }
+            </style></head>
+	<body data-view-mode="translation-only">
+		<div id="chart"></div>
+		<div id="description">
+			<h1 data-translated="true"><span class="original-text">Pretty Histogram Series</span><span class="ai_translation" style="margin-top: 0.5em; margin-bottom: 1.2em; display: block;">プリティヒストグラムシリーズ</span></h1>
+			<p data-translated="true"><span class="original-text">
+				Histogram series with custom rendering. Round corners and customazible column widths.
+			</span><span class="ai_translation" style="margin-top: 0.5em; margin-bottom: 1.2em; display: block;">カスタムレンダリングを持つヒストグラムシリーズ。角が丸く、カスタマイズ可能な列幅。</span></p>
+			<div style="display: flex; flex-direction: row;">
+				<div style="display: flex; flex-direction: column;margin:10px">
+					<div class="barEditor">
+						Bar 1:
+						<input id="bar_1" type="text">
+					</div>
+					<div class="barEditor">
+						Bar 2:
+						<input id="bar_2" type="text">
+					</div>
+					<div class="barEditor">
+						Bar 3:
+						<input id="bar_3" type="text">
+					</div>
+					<div class="barEditor" type="text">
+						Bar 4:
+						<input id="bar_4" type="text">
+					</div>
+					<div class="barEditor" type="text">
+						Bar 5:
+						<input id="bar_5" type="text">
+					</div>
+					<div class="barEditor" type="text">
+						Bar 5:
+						<input id="bar_6" type="text">
+					</div>
+				</div>
+				<div style="display: flex; flex-direction: column;margin:10px">
+					<div class="barEditor">
+						Radius:
+						<input id="radius" type="text">
+					</div>
+					<div class="barEditor">
+						Width %:
+						<input id="width" type="text">
+					</div>
+					<div class="barEditor">
+						<label for="autoscaleToZero">Autoscale to zero</label>
+						<input id="autoscaleToZero" type="checkbox" checked="">
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+<button id="ai-toggle-btn">バイリンガル</button><script>
+                document.getElementById('ai-toggle-btn').onclick = function() {
+                    const body = document.body;
+                    const btn = document.getElementById('ai-toggle-btn');
+                    const currentMode = body.getAttribute('data-view-mode');
+                    if (currentMode === 'translation-only') {
+                        body.removeAttribute('data-view-mode');
+                        btn.textContent = '翻訳のみ';
+                    } else {
+                        body.setAttribute('data-view-mode', 'translation-only');
+                        btn.textContent = 'バイリンガル';
+                    }
+                };
+            </script></body></html>
